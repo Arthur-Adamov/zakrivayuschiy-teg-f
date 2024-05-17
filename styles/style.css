@@ -17,4 +17,42 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font, sans-serif);
+  font-variation-settings: "wght" var(--text-font-weight);
 }
+
+.header {
+  font-family: var(--accent-font);
+}
+
+.header__title {
+  text-transform: uppercase;
+}
+
+.header__sub-title {
+
+}
+
+.theme-menu {
+
+}
+
+.header__theme-menu {
+
+}
+
+.theme-menu__list {
+
+}
+
+.theme-menu__item {
+
+}
+
+.theme-menu__button {
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
