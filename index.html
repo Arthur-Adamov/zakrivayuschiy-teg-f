@@ -18,13 +18,15 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt/html&gt</h1>
-      <p class="header__sub-title">закрывающий тег</p>
+      <div class="header__title">
+        <h1 class="header__big-title">&lt/html&gt</h1>
+        <p class="header__sub-title">закрывающий тег</p>
+      </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button type="button" data-theme="dark" class="theme-menu__button button">
               Темно
             </button>
           </li>
@@ -33,13 +35,13 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button type="button" data-theme="light" class="theme-menu__button button">
               Светло
             </button>
           </li>
@@ -47,7 +49,22 @@
       </nav>
     </header>
     <main>
-      
+      <section class="content_section">
+        <article class="card">
+          <h2 class="card__header">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <img src="./images/image.png" alt="" class="card__image">
+          <p class="card__paragraph">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__paragraph">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <button class="card__button button">Like</button>
+
+        </article>
+      </section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
