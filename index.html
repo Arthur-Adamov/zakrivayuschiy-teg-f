@@ -17,55 +17,88 @@
     <link rel="apple-touch-icon" href="./images/favicon.png">
   </head>
   <body class="page">
-    <header class="header">
-      <div class="header__title">
-        <h1 class="header__big-title">&lt/html&gt</h1>
-        <p class="header__sub-title">закрывающий тег</p>
-      </div>
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button button"
-            >
-              Авто
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button button">
-              Светло
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="content_section">
-        <article class="card">
-          <h2 class="card__header">
-            Фритрек и нулевой спринт: Подготовка к работе
-          </h2>
-          <img src="./images/image.png" alt="" class="card__image">
-          <p class="card__paragraph">
-            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
-          </p>
-          <p class="card__paragraph">
-            Место для ваших воспоминаний о начале обучения.
-          </p>
-          <button class="card__button button">Like</button>
+    <section class="content_section">
+      <header class="header">
+        <div class="header__block-title">
+          <a class="header__logo" href="">&lt/html&gt</a>
+          <h1 class="header__title">закрывающий тег</h1>
+        </div>
+        <nav class="theme-menu header__theme-menu">
+          <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+          <ul class="theme-menu__list">
+            <li class="theme-menu__item">
+              <button type="button" data-theme="dark" class="theme-menu__button button">
+                Темно
+              </button>
+            </li>
+            <li class="theme-menu__item">
+              <button
+                type="button"
+                data-theme="auto"
+                disabled
+                class="theme-menu__button button"
+              >
+                Авто
+              </button>
+            </li>
+            <li class="theme-menu__item">
+              <button type="button" data-theme="light" class="theme-menu__button button">
+                Светло
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        
+          <article class="card">
+            <h2 class="card__header">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <div class="card__image_continer">
+              <span class="card__lable">&lt/html&gt</span>
+              <img src="./images/image.png" alt="Машина" class="card__image">         
 
-        </article>
-      </section>
-    </main>
+            </div>
+            <div class="card__block">
+              <div class="card__paragraph_block">
+                <p class="card__paragraph">
+                  Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+                </p>
+                <p class="card__paragraph">
+                  Место для ваших воспоминаний о начале обучения.
+                </p>
+              </div>
+              <div class="card__button_block">
+                <button class="card__icon-button button">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
+                    <g clip-path="url(#a)">
+                      <path fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                      <path fill="red" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                      <path fill="#fff" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                      <path fill="red" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h39v36H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </button>
+                <button class="card__like-button button">
+                  <span class="button__text">
+                    Like
+                  </span>
+                </button>
+              </div>              
+            </div>            
+          </article>
+
+      </main>
+    </section>
+    
     <script src="./scripts/like.js"></script>
   </body>
 </html>
@@ -94,4 +127,22 @@
     <path fill="#000" d="M12 36v3H9v-3zM8.996 36v3h-3v-3z"/>
     <path fill="#000" d="M6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"/>
   </symbol>
+</svg>
+
+<svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="39" 
+    height="36" 
+    fill="none"
+>
+  <symbol id="like-icon"
+    stroke="currentColor"
+    fill="currentColor"
+  >  
+  <path 
+    fill="#000" 
+    d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"
+  />
+</symbol>
+  
 </svg>
