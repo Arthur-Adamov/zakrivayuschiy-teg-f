@@ -89,10 +89,26 @@
 
 button:hover {
   opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.button::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: inherit;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.button:focus::after {
+  width: 100%;
+  background-color: var(--accent-color);
 }
 
 .button:focus {
   outline: none;
+  opacity: 0.6;
 }
 
 button:disabled {
@@ -103,7 +119,25 @@ button:disabled {
 .button:disabled::before {
   content: '▶';
   position: absolute;
-  inset-inline-start: -15px;
+  inset-inline-start: -16px;
+
+  animation: triangle 0.5s infinite ease-in-out alternate;
+
+  /* animation-name: triangle;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate; */
+}
+
+@keyframes triangle {
+  from {
+    inset-inline-start: -16px;
+  }
+
+  to {
+    left: -12px;
+  }
 }
 
 .theme-menu__button {
