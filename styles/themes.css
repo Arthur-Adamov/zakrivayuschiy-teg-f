@@ -17,6 +17,12 @@
         repeating-linear-gradient(90deg, #000 2px, #000 4px, transparent 4px, transparent 6px),
         repeating-linear-gradient(#000 2px, #000 4px, transparent 4px, transparent 6px),
         linear-gradient(#007f0c, #004306);
+        
+    --btn-text-color: var(--accent-color);
+    --btn-animate-color: var(--accent-color);
+    
+    --heart-contour-color: var(--accent-color);
+    
 }
 
 :root.theme-light {
@@ -31,6 +37,12 @@
         repeating-linear-gradient(90deg, #d3d3d3 2px, #d3d3d3 4px, transparent 4px, transparent 6px),
         repeating-linear-gradient(#d3d3d3 2px, #d3d3d3 4px, transparent 4px, transparent 6px),
         linear-gradient(#e7e7e7, #1a1a1a);
+
+    --btn-text-color: #fff;
+    --btn-animate-color: #000;
+
+    --heart-contour-color: #000;
+    --heart-spark-color: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,6 +58,11 @@
             repeating-linear-gradient(90deg, #000 2px, #000 4px, transparent 4px, transparent 6px),
             repeating-linear-gradient(#000 2px, #000 4px, transparent 4px, transparent 6px),
             linear-gradient(#007f0c, #004306);
+
+        --btn-text-color: var(--accent-color);
+        --btn-animate-color: var(--accent-color);
+        
+        --heart-contour-color: var(--accent-color);
     }
 }
 
@@ -62,5 +79,12 @@
             repeating-linear-gradient(90deg, #d3d3d3 2px, #d3d3d3 4px, transparent 4px, transparent 6px),
             repeating-linear-gradient(#d3d3d3 2px, #d3d3d3 4px, transparent 4px, transparent 6px),
             linear-gradient(#e7e7e7, #1a1a1a);
+
+        --btn-text-color: #fff;
+        --btn-animate-color: #000;
+
+        --heart-contour-color: #000;
+        --heart-spark-color: #FF0000;
+
     }
 }
