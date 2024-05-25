@@ -154,8 +154,15 @@
   border: 2px solid var(--accent-color);
 }
 
+.card:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 .card__header {
+  font-family: var(--main-font);
+  font-weight: 700;
   font-size: 18px;
+  line-height: 22px;
 }
 
 .card__image_continer {
@@ -210,6 +217,7 @@
 .card__button_block {
   display: flex;
   justify-content: flex-end;
+  height: 38px;
 }
 
 .card__container_icon-button {
@@ -240,7 +248,7 @@
 }
 
 .card__icon-button {
-
+  height: 100%;
 }
 
 .heart .main-body {
@@ -318,7 +326,7 @@
 .content__button {
   position: relative;
   overflow: hidden;
-
+  align-items: center;
   font-family: var(--accent-font);
   border: 2px solid var(--accent-color);
 }
@@ -346,13 +354,13 @@
 }
 
 .card__like-button {
-
   min-width: 130px;
   padding: 9px 17px;
 }
 
 .button__text {
   font-family: var(--accent-font);
+  font-size: 14px;
   color: var(--btn-text-color);
   mix-blend-mode: difference;
 }
@@ -363,7 +371,10 @@
 }
 
 .footer__button {
-  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 13px;
   height: fit-content;
   background-color: var(--bg-color);
   margin: 52px auto;
@@ -371,10 +382,20 @@
 }
 
 .floppy-icon {
-  inline-size: 28px;
-  block-size: 28px;
+  inline-size: 39px;
+  block-size: 39px;
   mix-blend-mode: difference;
-  color: var(--accent-color);
+  color: var(--btn-text-color);
+}
+
+.dialog__content .floppy-icon {
+  min-inline-size: 39px;
+  min-block-size: 39px;
+}
+
+.footer__button .floppy-icon {
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 .dialog {
@@ -390,14 +411,18 @@ dialog::backdrop {
 .dialog__card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 40px;
   gap: 30px;
-  text-transform: uppercase;
   width: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
-  
-  
+  padding: 30px;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
 
 }
 
@@ -416,13 +441,22 @@ dialog::backdrop {
 }
 
 @media (width <= 375px) {
-  .header {
-
-  }
 
   .content_section {
     inline-size: 100%;
   }
 
+  .footer__button {
+    flex-direction: column;
+  }
+  
+  .floppy-icon {
+    min-inline-size: 28px;
+    min-block-size: 28px;
+  }
+
+  .dialog__card {
+    padding: 30px 41px;
+  }
 }
 
