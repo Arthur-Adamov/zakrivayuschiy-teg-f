@@ -14,12 +14,6 @@
 
 */
 
-/* @supports (font-variation-settings: normal) {
-  .page {
-      font-family: 'Inter-Variable', sans-serif;
-  }
-}  */
-
 @supports (font-variation-settings: wght) {
   .page {
       font-weight: 400;
@@ -50,7 +44,6 @@
   justify-content: end;
   text-transform: uppercase;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-
 }
 
 .header__block-title {
