@@ -14,6 +14,12 @@
 
 */
 
+@supports (font-variation-settings: normal) {
+  .page {
+      font-family: 'Inter-Variable', sans-serif;
+  }
+} 
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;

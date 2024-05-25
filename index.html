@@ -462,7 +462,7 @@
               </div>              
             </div>            
           </article>
-
+          
       </main>
     </section>
 
@@ -483,29 +483,29 @@
       </button>
     </footer>
 
-    <dialog id="dialog-id" class="dialog"
-      >
-      <div class="card dialog__card">
-        <div class="dialog__content">
-          <svg class="floppy-icon" viewBox="0 0 28 28"
-            width="39"
-            height="39">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <span>
-            <p class="dialog__card__paragraph">Вставьте дискету, чтобы продолжить</p>
-          </span>
-
+    <dialog id="dialog-id" class="dialog">
+      <form method="dialog">
+        <div class="card dialog__card">
+          <div class="dialog__content">
+            <svg class="floppy-icon" viewBox="0 0 28 28"
+              width="39"
+              height="39">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <span>
+              <p class="dialog__card__paragraph">Вставьте дискету, чтобы продолжить</p>
+            </span>
+  
+          </div>
+  
+          <button class="dialog__button content__button button"
+            class="close"
+            type="button"
+            onclick="window['dialog-id'].close();">
+            <span class="button__text">ok</span>
+          </button>
         </div>
-
-        <button class="dialog__button content__button button"
-          class="close"
-          type="button"
-          onclick="window['dialog-id'].close();">
-          <span class="button__text">ok</span>
-        </button>
-      </div>
-
+      </form>
     </dialog>
     
     <script src="./scripts/like.js"></script>
