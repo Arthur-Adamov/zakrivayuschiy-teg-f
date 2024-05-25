@@ -49,6 +49,7 @@
   text-align: center;
   justify-content: end;
   text-transform: uppercase;
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 
 }
 
@@ -68,10 +69,6 @@
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
-.theme-menu {
-
-}
-
 .header__theme-menu {
   display: flex;
   justify-content: center;
@@ -84,11 +81,6 @@
   align-items: flex-start;
   gap: 14px;
   position: relative;
-
-}
-
-.theme-menu__item {
-
 }
 
 .button {
@@ -135,14 +127,7 @@
   content: '▶';
   position: absolute;
   inset-inline-start: -16px;
-
   animation: triangle 0.5s infinite ease-in-out alternate;
-
-  /* animation-name: triangle;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate; */
 }
 
 @keyframes triangle {
@@ -215,6 +200,11 @@
   inline-size: 100%;
 }
 
+.img-frame {
+  outline: 2px solid #000;
+  font-size: 0;
+}
+
 .card__block {
   display: flex;
   flex-direction: column;
@@ -230,7 +220,6 @@
 .card__paragraph {
   font-size: 18px;
   font-variation-settings: "wght" var(--text-font-weight);
-  /* font-weight: var(--text-font-weight); */
 }
 
 .card__button_block {
@@ -245,12 +234,10 @@
 
 .like-icon .sparks {
   fill: transparent;
-  /* animation-name: sparking; */
 }
 
 .like-icon.is-liked .sparks {
   animation: sparking 0.3s ease-in 0.6s;
-  /* opacity: 1; */
 }
 
 @keyframes sparking {
@@ -318,7 +305,6 @@
 .like-icon.is-liked .contour {
   fill: var(--heart-spark-color);
   transition: 0.3s 0.3s;
-
 }
 
 .like-icon.is-liked {
@@ -340,7 +326,6 @@
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
 }
-
 
 .content__button {
   position: relative;
@@ -386,7 +371,6 @@
 
 .footer {
   display: flex;
-
 }
 
 .footer__button {
@@ -442,7 +426,6 @@ dialog::backdrop {
   align-items: center;
   gap: 20px;
   font-size: 14px;
-
 }
 
 .dialog__card__paragraph {
@@ -505,9 +488,4 @@ dialog::backdrop {
 
 .multiple {
   filter: brightness(191%) saturate(27%) hue-rotate(82deg) blur(1px);
-}
-
-.img-frame {
-  outline: 2px solid #000;
-  font-size: 0;
 }
