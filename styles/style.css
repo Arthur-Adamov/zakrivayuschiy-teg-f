@@ -168,10 +168,12 @@
 .card__image_continer {
   position: relative;
   aspect-ratio: 1 / 1;
+  margin: 0;
 }
 
 .card__lable {
   position: absolute;
+  z-index: 1;
   right: 25px;
   top: 25px;
   font-family: var(--accent-font);
@@ -195,6 +197,8 @@
 } 
 
 .card__image {
+  position: relative;
+  z-index: 0;
   inline-size: 100%;
 }
 
@@ -459,4 +463,38 @@ dialog::backdrop {
   .dialog__card {
     padding: 30px 41px;
   }
+}
+
+.grayscale {
+  filter: grayscale(0.8);
+}
+
+.saturate {
+  filter: saturate(180%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(30deg);
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.sepia {
+  filter: sepia(90%);
+}
+
+.blur {
+  filter: blur(0.2rem);
+}
+
+.multiple {
+  filter: brightness(191%) saturate(27%) hue-rotate(82deg) blur(1px);
+}
+
+
+.img-frame {
+  outline: 2px solid #000;
+  font-size: 0;
 }
