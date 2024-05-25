@@ -14,11 +14,17 @@
 
 */
 
-@supports (font-variation-settings: normal) {
+/* @supports (font-variation-settings: normal) {
   .page {
       font-family: 'Inter-Variable', sans-serif;
   }
-} 
+}  */
+
+@supports (font-variation-settings: wght) {
+  .page {
+      font-weight: 400;
+  }
+}
 
 .page {
   min-inline-size: 320px;
@@ -500,7 +506,6 @@ dialog::backdrop {
 .multiple {
   filter: brightness(191%) saturate(27%) hue-rotate(82deg) blur(1px);
 }
-
 
 .img-frame {
   outline: 2px solid #000;
