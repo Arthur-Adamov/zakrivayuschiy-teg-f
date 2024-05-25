@@ -165,7 +165,8 @@
 
 .card__header {
   font-family: var(--main-font);
-  font-weight: var(--header-font-weight);
+  font-variation-settings: "wght" var(--header-font-weight);
+  /* font-weight: var(--header-font-weight); */
   font-size: 18px;
   line-height: 22px;
   padding: 5px 10px;
@@ -222,7 +223,8 @@
 
 .card__paragraph {
   font-size: 18px;
-  font-weight: var(--text-font-weight);
+  font-variation-settings: "wght" var(--text-font-weight);
+  /* font-weight: var(--text-font-weight); */
 }
 
 .card__button_block {
