@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --main-font: 'Inter-Variable', Arial, sans-serif;
-    --accent-font: 'PressStart2P', Arial, sans-serif;
+    --accent-font: 'PressStart2P', 'Copperplate', fantasy;
     --header-font-weight: 700;
     --text-font-weight: 400;
 
@@ -19,7 +19,7 @@
     --btn-animate-color: #000;
 
     --heart-contour-color: var(--accent-color);
-    --heart-spark-color: #FF0000;
+    --heart-spark-color: #ff0000;
 
     --heart-filling-color: var(--accent-color);
 }
