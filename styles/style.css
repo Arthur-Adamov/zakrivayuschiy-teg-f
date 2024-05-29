@@ -230,6 +230,7 @@
 
 .card__paragraph {
   font-size: 18px;
+  line-height: 21px;
 }
 
 .card__button_block {
@@ -363,6 +364,7 @@
 
 .save_button__block {
   display: flex;
+  margin: 52px auto 103px;
 }
 
 .save__button {
@@ -372,7 +374,7 @@
   padding: 13px 17px;
   height: fit-content;
   background-color: var(--bg-color, #fff);
-  margin: 52px auto;
+  margin: 0 auto;
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
 }
 
@@ -447,6 +449,10 @@ dialog::backdrop {
 
   .save__button {
     flex-direction: column;
+  }
+
+  .save_button__block {
+    margin: 51px auto 100px;
   }
   
   .floppy-icon {
